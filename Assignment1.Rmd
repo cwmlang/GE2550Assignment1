@@ -4,6 +4,7 @@ author: "Charles Lang"
 date: "December 20, 2015"
 output: html_document
 ---
+##Extract data from SWIRL
 ```{r}
 h <-read.table("~/.rstudio-desktop/history_database", sep=":", fill=T, stringsAsFactors=F)
 q <- as.numeric(which(h$V2 == "x <- 5 + 7"))
@@ -13,5 +14,9 @@ names(H2) <- c("time", "answer")
 H2$id <- "student"
 H2$lesson <- 1
 
+```
+
+```{r}
 
 ```
+
